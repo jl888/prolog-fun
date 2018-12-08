@@ -1,4 +1,4 @@
-% Split_odd_even function =======================
+% split_odd_even function =======================
 split_odd_even([], [], []).
 
 split_odd_even([H|T1], [H|T2], ListB) :-
@@ -10,7 +10,7 @@ split_odd_only([H|T1], ListA, [H|T2]) :-
     split_odd_even(T1, ListA,  T2).
 
 
-% Merge function ================================
+% merge function ================================
 merge([], [], []).
 
 merge([H1|T1], [], [H1|List]) :-
@@ -26,7 +26,7 @@ merge([H1|T1], [H2|T2], [H2|List]) :-
     (H2 < H1), merge([H1|T1], T2, List).
 
 
-% Merge_sort ====================================
+% merge_sort ====================================
 merge_sort([], []).
 
 merge_sort([H1], [H1|List]) :-
