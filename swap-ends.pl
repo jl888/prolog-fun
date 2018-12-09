@@ -1,11 +1,11 @@
-naive-reverse([],[]).
-naive-reverse([H|T],R):-
-    naive-reverse(T,RT),
+naive_reverse([],[]).
+naive_reverse([H|T],R):-
+    naive_reverse(T,RT),
     append(RT,[H],R).
 
 swap_ends([Head1|Tail1], [Head2|Tail2]) :-
-    naive-reverse(Tail1, [Head2|Body]),
-    naive-reverse([Head1|Body], Tail2).			      
+    naive_reverse(Tail1, [Head2|Body]),
+    naive_reverse([Head1|Body], Tail2).			      
 
 
 test_answer :-
